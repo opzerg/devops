@@ -1,3 +1,7 @@
+
+RED='\033[0;31m'
+NC='\033[0m'
+
 # apt update
 sudo apt-get update
 
@@ -20,3 +24,7 @@ sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
 # add docker group
 sudo usermod -aG docker $USER
+
+echo 
+echo ${RED}if you want to leave out \'sudo\', you need to login again${NC}
+
